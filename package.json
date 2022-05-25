@@ -12,16 +12,16 @@
         "node": ">=10"
     },
     "scripts": {
-        "build": "../react-media-recorder2/node_modules/.bin/microbundle-crl --no-compress --format modern,cjs",
-        "start": "../react-media-recorder2/node_modules/.bin/microbundle-crl watch --no-compress --format modern,cjs",
-        "prepare": "../react-media-recorder2/node_modules/.bin/run-s build",
+        "build": "../react-media-recorder/node_modules/.bin/microbundle-crl --no-compress --format modern,cjs",
+        "start": "../react-media-recorder/node_modules/.bin/microbundle-crl watch --no-compress --format modern,cjs",
+        "prepare": "../react-media-recorder/node_modules/.bin/run-s build",
         "test": "../react-media-recorder2/node_modules/.bin/run-s test:unit test:lint test:build",
-        "test:build": "../react-media-recorder2/node_modules/.bin/run-s build",
-        "test:lint": "../react-media-recorder2/node_modules/.bin/eslint .",
-        "test:unit": "../react-media-recorder2/node_modules/.bin/cross-env CI=1 react-scripts test --env=jsdom",
-        "test:watch": "../react-media-recorder2/node_modules/.bin/react-scripts test --env=jsdom",
-        "predeploy": "cd ../react-media-recorder2/example && yarn install && yarn run build",
-        "deploy": "../react-media-recorder2/node_modules/.bin/gh-pages -d example/build"
+        "test:build": "../react-media-recorder/node_modules/.bin/run-s build",
+        "test:lint": "../react-media-recorder/node_modules/.bin/eslint .",
+        "test:unit": "../react-media-recorder/node_modules/.bin/cross-env CI=1 react-scripts test --env=jsdom",
+        "test:watch": "../react-media-recorder/node_modules/.bin/react-scripts test --env=jsdom",
+        "predeploy": "cd ../react-media-recorder/example && yarn install && yarn run build",
+        "deploy": "../react-media-recorder/node_modules/.bin/gh-pages -d example/build"
     },
     "peerDependencies": {
         "react": ">= 16.0.0",
