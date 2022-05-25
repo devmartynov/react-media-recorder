@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ../../react-media-recorder2/node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../../react-media-recorder2/node_modules/react-scripts/bin/react-scripts.js build",
-    "test": "node ../../react-media-recorder2/node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node ../../react-media-recorder2/node_modules/react-scripts/bin/react-scripts.js eject"
+    "start": "node ../../react-media-recorder/node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node ../../react-media-recorder/node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node ../../react-media-recorder/node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node ../../react-media-recorder/node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
     "@testing-library/jest-dom": "link:../node_modules/@testing-library/jest-dom",
