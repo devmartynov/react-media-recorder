@@ -1,0 +1,53 @@
+{
+    "extends": [
+        "@steroidsjs/eslint-config",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:security/recommended"
+    ],
+    "root": true,
+    "settings": {
+        "react": {
+            "version": "16"
+        }
+    },
+    "rules": {
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "arrow-body-style": 0,
+        "linebreak-style": 0,
+        "no-console": 0,
+        "max-len": [
+            "warn",
+            {
+                "code": 140
+            }
+        ],
+        "import/no-extraneous-dependencies": 0,
+        "class-methods-use-this": ["warn"],
+        "tsdoc/syntax": "warn",
+        "@typescript-eslint/no-var-requires": "off",
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": []
+            }
+        ],
+        "no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^_",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ]
+
+    },
+    "plugins": [
+        "@typescript-eslint/eslint-plugin",
+        "eslint-plugin-tsdoc",
+        "unused-imports"
+    ]
+}

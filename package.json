@@ -1,0 +1,65 @@
+{
+    "name": "react-media-recorder",
+    "version": "1.0.0",
+    "description": "",
+    "author": "devmartynov",
+    "license": "MIT",
+    "repository": "devmartynov/react-media-recorder",
+    "main": "dist/index.js",
+    "module": "dist/index.modern.js",
+    "source": "src/index.tsx",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "build": "../react-media-recorder2/node_modules/.bin/microbundle-crl --no-compress --format modern,cjs",
+        "start": "../react-media-recorder2/node_modules/.bin/microbundle-crl watch --no-compress --format modern,cjs",
+        "prepare": "../react-media-recorder2/node_modules/.bin/run-s build",
+        "test": "../react-media-recorder2/node_modules/.bin/run-s test:unit test:lint test:build",
+        "test:build": "../react-media-recorder2/node_modules/.bin/run-s build",
+        "test:lint": "../react-media-recorder2/node_modules/.bin/eslint .",
+        "test:unit": "../react-media-recorder2/node_modules/.bin/cross-env CI=1 react-scripts test --env=jsdom",
+        "test:watch": "../react-media-recorder2/node_modules/.bin/react-scripts test --env=jsdom",
+        "predeploy": "cd ../react-media-recorder2/example && yarn install && yarn run build",
+        "deploy": "../react-media-recorder2/node_modules/.bin/gh-pages -d example/build"
+    },
+    "peerDependencies": {
+        "react": ">= 16.0.0"
+    },
+    "devDependencies": {
+        "@steroidsjs/eslint-config": "^2.0.1",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "@types/jest": "^25.1.4",
+        "@types/node": "^12.12.38",
+        "@types/react": "^16.9.27",
+        "@types/react-dom": "^16.9.7",
+        "@typescript-eslint/eslint-plugin": "^5.17.0",
+        "@typescript-eslint/parser": "^5.17.0",
+        "babel-eslint": "^10.0.3",
+        "cross-env": "^7.0.2",
+        "eslint": "7.7.0",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-config-standard-react": "^9.2.0",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^11.0.0",
+        "eslint-plugin-security": "^1.5.0",
+        "eslint-plugin-tsdoc": "^0.2.14",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "gh-pages": "^2.2.0",
+        "microbundle-crl": "^0.13.10",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.0.4",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "^5.0.1",
+        "typescript": "^4.7.2"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {}
+}
