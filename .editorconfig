@@ -9,7 +9,7 @@ insert_final_newline = true
 end_of_line = lf
 max_line_length = 140
 
-[*.{ts, tsx, js, jsx}]
+[*.{ts, tsx, js, jsx, json}]
 indent_size = 4
 
 [*.md]
