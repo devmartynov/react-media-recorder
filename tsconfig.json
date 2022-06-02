@@ -20,6 +20,5 @@
   "include": [
     "src"
   ],
-  "exclude": [
-    "../react-media-recorder2/node_modules", "dist", "example"]
+  "exclude": ["../react-media-recorder/node_modules", "dist", "example"]
 }

@@ -1,6 +1,6 @@
 {
-  "short_name": "react-media-recorder",
-  "name": "react-media-recorder",
+  "short_name": "@devmartynov/react-media-recorder",
+  "name": "@devmartynov/react-media-recorder",
   "icons": [
     {
       "src": "favicon.ico",
