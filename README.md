@@ -33,7 +33,7 @@ yarn add @devmartynov/react-media-recorder
 ```tsx
 import React, { Component } from 'react'
 
-import { ReactMediaRecorder } from '@devmartynov/react-media-recorder';
+import { ReactMediaRecorder, RecordingStatusEnum } from '@devmartynov/react-media-recorder';
 
 class Example extends Component {
     render() {
@@ -90,7 +90,7 @@ class Example extends Component {
 ```tsx
 import React from 'react'
 
-import { useMediaRecorder } from '@devmartynov/react-media-recorder';
+import { useMediaRecorder, RecordingStatusEnum } from '@devmartynov/react-media-recorder';
 
 function Example() {
     const {
@@ -101,7 +101,7 @@ function Example() {
         pauseRecording,
         resumeRecording,
         status,
-    } = useAudioRecorder();
+    } = useMediaRecorder();
 
     return (
         <div className='container'>
